@@ -36,11 +36,16 @@ header {
 }
 
 .header-container {
-    margin-top: 20px;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* Eventuale bordo nero sopra */
+    /* margin-top: 20px; */
+}
+
+.logo-header img {
+    height: 80px;
 }
 
 .navbar-list {
@@ -59,19 +64,20 @@ header {
 /* Main */
 main {
     background-color: #1C1C1C;
+    font-size: 1.2rem;
 }
 
 .main-container {
+    display: flex;
+    align-items: center;
     /* debug */
-    height: 200px;
+    height: 100px;
 }
 
 /* My Shop */
 
 .container-shop {
     background-color: #0282F9;
-    /* debug */
-    height: 200px;
 }
 
 .shop-list {
@@ -79,17 +85,21 @@ main {
     justify-content: space-around;
     align-items: center;
     font-size: 0.7rem;
+    font-weight: 300;
+    padding: 50px 0;
 }
 
 .container-shop img {
     height: 50px;
     vertical-align: middle;
+    padding-right: 10px;
 }
 
-.container-shop ul li:last-child {
-
-    width: 50px;
+.container-shop ul li:last-child img {
+    width: 60px;
 }
+
+
 
 /* Footer */
 
