@@ -4,8 +4,33 @@
     box-sizing: border-box;
 }
 
+/* Generics */
+
 :root {
     background-color: black;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "Open Sans";
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+li {
+    list-style-type: none;
 }
 
 /* Header */
@@ -15,11 +40,10 @@ header {
 }
 
 .header-container {
-    width: 80%;
-    margin: 0 auto;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    color: black;
     /* debug */
     height: 200px;
 }
@@ -29,7 +53,62 @@ header {
     justify-content: end;
 }
 
-li {
-    list-style-type: none;
-    margin: 20px;
+/* Main */
+main {
+    background-color: #1C1C1C;
+}
+
+.main-container {
+    /* debug */
+    height: 200px;
+}
+
+/* My Shop */
+
+.container-shop {
+    background-color: #0282F9;
+    /* debug */
+    height: 200px;
+}
+
+.shop-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.container-shop img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+.container-shop ul li:last-child {
+
+    width: 50px;
+}
+
+/* Footer */
+
+.footer-container {
+    background-image: url("../img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-container {
+    display: flex;
+}
+
+.contact-container a {
+    color: rgb(155, 155, 155);
+    font-size: 0.5rem;
+}
+
+/* Social */
+
+.social-container {
+    background-color: #303030;
+    /* debug */
+    height: 200px;
 }

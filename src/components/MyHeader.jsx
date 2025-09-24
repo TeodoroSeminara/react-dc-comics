@@ -1,7 +1,7 @@
 const MyHeader = () => {
     return (
         <header>
-            <div className="header-container">
+            <div className="header-container container">
                 <figure className="logo-header">
                     <img src="../../src/assets/img/dc-logo.png" alt="Logo" />
                 </figure>
