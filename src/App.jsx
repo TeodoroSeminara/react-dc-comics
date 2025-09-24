@@ -1,12 +1,14 @@
-import { useState } from 'react'
+import MyHeader from "./components/MyHeader"
+// import MyMainContent from "./components/MyMainContent"
+// import MyFooter from "./components/MyFooter"
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-    
+      <MyHeader />
+
     </>
   )
 }
