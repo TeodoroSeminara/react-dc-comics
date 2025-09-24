@@ -9,8 +9,9 @@
 :root {
     background-color: black;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 20px;
     font-family: "Open Sans";
+    font-weight: 600;
 }
 
 a {
@@ -23,14 +24,9 @@ a {
     margin: 0 auto;
 }
 
-ul {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: #ffffff;
-}
-
 li {
     list-style-type: none;
+    padding: 0 10px;
 }
 
 /* Header */
@@ -41,16 +37,23 @@ header {
 
 .header-container {
     margin-top: 20px;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
-    color: black;
-    /* debug */
-    height: 200px;
+    align-items: center;
 }
 
 .navbar-list {
     display: flex;
-    justify-content: end;
+    color: #303030;
+    font-size: 0.8rem;
+}
+
+/* Hover nav */
+
+.navbar-list li:hover {
+    color: #0282F9;
+    cursor: pointer;
 }
 
 /* Main */
@@ -110,5 +113,24 @@ main {
 .social-container {
     background-color: #303030;
     /* debug */
-    height: 200px;
+    /* height: 200px; */
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.follow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    color: #0282F9;
+}
+
+.img-social img {
+    margin: 0 10px;
 }
