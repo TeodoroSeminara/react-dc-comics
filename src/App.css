@@ -1,3 +1,4 @@
+/* CSS RESET */
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +6,6 @@
 }
 
 /* Generics */
-
 :root {
     background-color: black;
     color: #ffffff;
@@ -30,7 +30,6 @@ li {
 }
 
 /* Header */
-
 header {
     background-color: #ffffff;
 }
@@ -54,8 +53,8 @@ header {
     font-size: 0.8rem;
 }
 
-/* Hover nav */
 
+/* Hover nav */
 .navbar-list li:hover {
     color: #0282F9;
     cursor: pointer;
@@ -65,6 +64,7 @@ header {
 main {
     background-color: #1C1C1C;
     font-size: 1.2rem;
+    /* height: 40vh; */
 }
 
 .main-container {
@@ -75,7 +75,6 @@ main {
 }
 
 /* My Shop */
-
 .container-shop {
     background-color: #0282F9;
 }
@@ -99,12 +98,17 @@ main {
     width: 60px;
 }
 
-/* Footer */
+/* Hover Shop */
+.shop-list li:hover {
+    transform: scale(1.1);
+}
 
+/* Footer */
 .footer-container {
-    background-image: url("../img/footer-bg.jpg");
+    background-image: url("../img/dc-logo-bg.png"), url("../img/footer-bg.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 80% center, center;
+    background-size: 600px, cover;
 }
 
 .contact-container {
@@ -132,7 +136,6 @@ main {
 }
 
 /* Hover contact */
-
 .contact-container a:hover {
     cursor: pointer;
     color: white;
@@ -140,11 +143,8 @@ main {
 }
 
 /* Social */
-
 .social-container {
     background-color: #303030;
-    /* debug */
-    /* height: 200px; */
 }
 
 .social {
@@ -160,8 +160,26 @@ main {
     align-items: center;
     margin-right: 20px;
     color: #0282F9;
+    font-weight: 700;
 }
 
 .img-social img {
     margin: 0 10px;
+}
+
+.sign-up {
+    border: 2px solid #0282F9;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+/* Hover Social */
+.sign-up:hover {
+    background-color: #ffffff;
+    color: #0282F9;
+}
+
+.img-social img:hover {
+    background-color: #ffffff;
+    border-radius: 50%;
 }
