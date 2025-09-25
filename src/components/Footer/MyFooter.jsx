@@ -1,46 +1,68 @@
 import MySocial from "./MySocial"
 
+
+
 const MyFooter = () => {
+    const dcComicsLinks = [
+        { id: 1, url: "#", name: "Characters", class: false },
+        { id: 2, url: "#", name: "Comics", class: false },
+        { id: 3, url: "#", name: "Movies", class: false },
+        { id: 4, url: "#", name: "TV", class: false },
+        { id: 5, url: "#", name: "Games", class: false },
+        { id: 6, url: "#", name: "Videos", class: false },
+        { id: 7, url: "#", name: "News", class: false }
+    ];
+
+    const shopLink = [
+        { id: 1, url: "#", name: "Shop DC", class: false },
+        { id: 2, url: "#", name: "Shop DC Collectibles", class: false },
+    ];
+
+    const dcLinks = [
+        { id: 1, url: "#", name: "Terms Of Use", class: false },
+        { id: 2, url: "#", name: "Privacy policy(New)", class: false },
+        { id: 3, url: "#", name: "Ad Choices", class: false },
+        { id: 4, url: "#", name: "Advertising", class: false },
+        { id: 5, url: "#", name: "Jobs", class: false },
+        { id: 6, url: "#", name: "Subscriptions", class: false },
+        { id: 7, url: "#", name: "Talent Workshops", class: false },
+        { id: 8, url: "#", name: "CPSC Certificates", class: false },
+        { id: 9, url: "#", name: "Ratings", class: false },
+        { id: 10, url: "#", name: "Shop Help", class: false },
+        { id: 11, url: "#", name: "Contact Us", class: false },
+    ];
+
+    const sitesLinks = [
+        { id: 1, url: "#", name: "DC", class: false },
+        { id: 2, url: "#", name: "MAD Magazine", class: false },
+        { id: 3, url: "#", name: "DC Kids", class: false },
+        { id: 4, url: "#", name: "DC Universe", class: false },
+        { id: 5, url: "#", name: "DC Power Visa", class: false }
+    ];
+
     return (
         <footer className="footer-container">
             <div className="contact-container container">
                 <nav>
                     <ul>DC COMICS
-                        <li><a href="#">Characters</a></li>
-                        <li><a href="#">Comics</a></li>
-                        <li><a href="#">Movies</a></li>
-                        <li><a href="#">TV</a></li>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Videos</a></li>
-                        <li><a href="#">News</a></li>
+                        {dcComicsLinks.map((element) => (
+                            <li key={element.id}><a href={element.url}>{element.name}</a></li>))}
                     </ul>
                     <ul>SHOP
-                        <li><a href="#">Shop DC</a></li>
-                        <li><a href="#">Shop DC Collectibles</a></li>
+                        {shopLink.map((element) => (
+                            <li key={element.id}><a href={element.url}>{element.name}</a></li>))}
                     </ul>
                 </nav>
                 <nav>
                     <ul>DC
-                        <li><a href="#">Terms Of Use </a></li>
-                        <li><a href="#">Privacy policy(New)</a></li>
-                        <li><a href="#">Ad Choices</a></li>
-                        <li><a href="#">Advertising</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Subscriptions</a></li>
-                        <li><a href="#">Talent Workshops</a></li>
-                        <li><a href="#">CPSC Certificates</a></li>
-                        <li><a href="#">Ratings</a></li>
-                        <li><a href="#">Shop Help</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        {dcLinks.map((element) => (
+                            <li key={element.id}><a href={element.url}>{element.name}</a></li>))}
                     </ul>
                 </nav>
                 <nav>
                     <ul>SITES
-                        <li><a href="#">DC</a></li>
-                        <li><a href="#">MAD Magazine</a></li>
-                        <li><a href="#">DC Kids</a></li>
-                        <li><a href="#">DC Universe</a></li>
-                        <li><a href="#">DC Power Visa</a></li>
+                        {sitesLinks.map((element) => (
+                            <li key={element.id}><a href={element.url}>{element.name}</a></li>))}
                     </ul>
                 </nav>
 

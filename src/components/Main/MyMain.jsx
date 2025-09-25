@@ -1,17 +1,17 @@
 import MyShop from "./MyShop"
 import Comics from "./Comics"
 
-const jumbo = "../../src/assets/img/jumbotron.jpg"
-
 const MyMain = () => {
     return (
         <main>
-            <div className="jumbotron">
-                {/* <img src={jumbo} alt="" /> */}
+            <section>
+                <div className="jumbotron"></div>
                 <div className="main-container container">
+                    <div className="bg-blue label-series">CURRENT SERIES</div>
                     <Comics />
+                    <button className="btn bg-blue more-comics">LOAD MORE</button>
                 </div>
-            </div>
+            </section>
             <MyShop />
         </main >
     )

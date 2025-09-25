@@ -20,7 +20,7 @@ a {
 }
 
 .container {
-    width: 70%;
+    max-width: 70%;
     margin: 0 auto;
 }
 
@@ -29,14 +29,33 @@ li {
     padding: 0 10px;
 }
 
+.bg-blue {
+    padding: 10px;
+    margin: 10px;
+    background-color: #0282F9;
+}
+
+/* Button reset */
+
+.btn {
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+
 /* Header */
 header {
     background-color: #ffffff;
 }
 
 .header-container {
-    padding: 20px 0;
+    padding-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     /* Eventuale bordo nero sopra */
@@ -54,58 +73,74 @@ header {
     font-size: 0.8rem;
 }
 
-
 /* Hover nav */
 .navbar-list a:hover {
     color: #0282F9;
     cursor: pointer;
 }
 
+.navbar-list li:hover {
+    border-bottom: #0282F9 1px solid;
+}
+
 /* Jumbotron */
 .jumbotron {
-    /* height: 10vh; */
+    background-image: url(../img/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-bottom: 50px;
 }
 
 /* Main */
 main {
     background-color: #1C1C1C;
     font-size: 1.2rem;
-    /* height: 40vh; */
 }
 
 .main-container {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    /* debug */
-    /* height: 100px; */
+    justify-content: center;
+    position: relative;
+}
+
+/* Label */
+.label-series {
+    position: absolute;
+    top: -13%;
+    left: -3%;
+}
+
+.more-comics {
+    padding: 5px 35px;
+    font-size: 0.7rem;
 }
 
 /* Comics */
 .comics-section {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
-    margin: 20px 0;
+    gap: 20px;
 }
 
 .comics-container {
-    width: calc((100% /6) - (50px / 6));
-    margin: 0 auto;
+    flex: 0 0 calc((100% / 6) - (100px / 6));
+    justify-content: center;
 }
 
-.comics-figure {
-    /* max-width: calc((100% /6) - (50px / 6)); */
-}
 
 .comics-container figcaption {
     font-size: 0.7rem;
-    width: 100px;
+    text-transform: uppercase;
+    max-width: 180px;
 }
 
 .comics-container img {
-    width: 200px;
-    height: 270px;
+    max-width: 180px;
+    max-height: 270px;
 }
 
 /* My Shop */
@@ -141,7 +176,7 @@ main {
 .footer-container {
     background-image: url("../img/dc-logo-bg.png"), url("../img/footer-bg.jpg");
     background-repeat: no-repeat;
-    background-position: 80% center, center;
+    background-position: 75% center, center;
     background-size: 600px, cover;
 }
 
@@ -219,4 +254,19 @@ main {
 .img-social img:hover {
     background-color: #ffffff;
     border-radius: 50%;
+}
+
+
+/* Quando lo schermo è sotto i 1000px → 2 colonne */
+@media (max-width: 1000px) {
+    .comics-container {
+        width: calc((100% / 2) - (20px / 2));
+    }
+}
+
+/* Quando lo schermo è molto stretto → 1 colonna */
+@media (max-width: 600px) {
+    .comics-container {
+        width: 100%;
+    }
 }
