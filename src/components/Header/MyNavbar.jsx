@@ -1,5 +1,3 @@
-
-
 const MyNavbar = () => {
 
     const navbarLinks = ["CHARACTERS", "COMICS", "MOVIES", "TV", "GAMES", "COLLECTIBLES", "VIDEOS", "FANS", "NEWS", "SHOP"];

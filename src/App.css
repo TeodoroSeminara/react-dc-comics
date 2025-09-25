@@ -61,6 +61,11 @@ header {
     cursor: pointer;
 }
 
+/* Jumbotron */
+.jumbotron {
+    /* height: 10vh; */
+}
+
 /* Main */
 main {
     background-color: #1C1C1C;
@@ -72,7 +77,35 @@ main {
     display: flex;
     align-items: center;
     /* debug */
-    height: 100px;
+    /* height: 100px; */
+}
+
+/* Comics */
+.comics-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.comics-container {
+    width: calc((100% /6) - (50px / 6));
+    margin: 0 auto;
+}
+
+.comics-figure {
+    /* max-width: calc((100% /6) - (50px / 6)); */
+}
+
+.comics-container figcaption {
+    font-size: 0.7rem;
+    width: 100px;
+}
+
+.comics-container img {
+    width: 200px;
+    height: 270px;
 }
 
 /* My Shop */
