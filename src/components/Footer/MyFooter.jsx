@@ -1,3 +1,5 @@
+import MySocial from "./MySocial"
+
 const MyFooter = () => {
     return (
         <footer className="footer-container">
@@ -43,7 +45,7 @@ const MyFooter = () => {
                 </nav>
 
             </div>
-
+            <MySocial />
         </footer >
     )
 }

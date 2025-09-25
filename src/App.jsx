@@ -1,9 +1,7 @@
 import './App.css'
-import MyHeader from "./components/MyHeader"
-import MyMain from "./components/MyMain"
-import MyShop from "./components/MyShop"
-import MyFooter from "./components/MyFooter"
-import MySocial from "./components/MySocial"
+import MyHeader from "./components/Header/MyHeader"
+import MyMain from "./components/Main/MyMain"
+import MyFooter from "./components/Footer/MyFooter"
 
 function App() {
 
@@ -11,9 +9,7 @@ function App() {
     <>
       <MyHeader />
       <MyMain />
-      <MyShop />
       <MyFooter />
-      <MySocial/>
     </>
   )
 }

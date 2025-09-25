@@ -47,7 +47,8 @@ header {
     height: 80px;
 }
 
-.navbar-list {
+.navbar-list,
+.navbar-list a {
     display: flex;
     color: #303030;
     font-size: 0.8rem;
@@ -55,7 +56,7 @@ header {
 
 
 /* Hover nav */
-.navbar-list li:hover {
+.navbar-list a:hover {
     color: #0282F9;
     cursor: pointer;
 }
@@ -158,13 +159,16 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 20px;
     color: #0282F9;
     font-weight: 700;
 }
 
 .img-social img {
     margin: 0 10px;
+}
+
+.img-social a:first-child {
+    margin-left: 30px;
 }
 
 .sign-up {
