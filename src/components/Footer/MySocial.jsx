@@ -2,7 +2,7 @@ const MySocial = () => {
     return (
         <div className="social-container">
             <div className="social container">
-                <a href="@" className="sign-up">SIGN-UP NOW!</a>
+                <a href="#" id="test" className="sign-up">SIGN-UP NOW!</a>
                 <div className="follow">
                     <span>FOLLOW US</span>
                     <div className="img-social">

@@ -1,7 +1,7 @@
 const MyNavbar = () => {
 
     const navbarLinks = [
-        { id: 1, url: "#", name: "CHARACTERS", class: false },
+        { id: 1, url: "#test", name: "CHARACTERS", class: false },
         { id: 2, url: "#", name: "COMICS", class: false },
         { id: 3, url: "#", name: "MOVIES", class: false },
         { id: 4, url: "#", name: "TV", class: false },
